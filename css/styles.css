@@ -1,0 +1,84 @@
+/* Global etiketlerin sıfırlanması */
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: 1.5;
+  }
+/* Genel boşluk ve dolgu ayarları */
+body, ul, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .section {
+    margin: 0; /* Harici margin kullanılmamalı (B14) */
+    padding: 120px 0; /* Her bölüm 120px üst ve alt padding (B15) */
+  }
+  
+  .container {
+    max-width: 1158px; /* Genişlik 1158px (B8) */
+    margin: 0 auto; /* Ortalama */
+    padding: 0 20px; /* Yan boşluklar */
+  }
+    /* Header için flexbox kullanımı */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0; /* Alt kenarlık (B13) */
+  }
+  
+  /* Navigasyon menüsü */
+  .nav {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+  
+  /* Liste öğeleri için flexbox */
+  .section-two, .section-four {
+    display: flex;
+    justify-content: space-between; /* Kartları yatay olarak hizalar */
+    flex-wrap: wrap; /* Ekrana sığmazsa aşağı kayar */
+  }
+  /* Portföy kartları */
+.portfolio-item {
+    border-bottom: 1px solid #e0e0e0; /* Sadece alt kenarlık (B16) */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover {
+    transform: translateY(-5px); /* Hover efekti ile hafif yukarı çıkma */
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+  }
+  h1, h2, h3 {
+    font-weight: 700;
+    color: #2e2f42;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  h1 {
+    font-size: 56px;
+  }
+  
+  h2 {
+    font-size: 36px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+    
